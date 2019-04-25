@@ -1,7 +1,10 @@
 {
   "pages": [
+    "pages/home/home",
+    "pages/person/person",
     "pages/index/index",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/map/map"
   ],
   "subPackages": [],
   "window": {
@@ -10,5 +13,47 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#4492eb",
+    "backgroundColor": "#333",
+    "list": [
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "static/index/map.png",
+        "selectedIconPath": "static/index/map2.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "static/index/home.png",
+        "selectedIconPath": "static/index/home2.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人中心",
+        "iconPath": "static/index/person-fill.png",
+        "selectedIconPath": "static/index/person-fill2.png"
+      }
+    ],
+    "condition": {
+      "current": 0,
+      "list": [
+        {
+          "name": "map",
+          "path": "pages/map/map"
+        },
+        {
+          "name": "home",
+          "path": "pages/home/home"
+        },
+        {
+          "name": "person",
+          "path": "pages/person/person"
+        }
+      ]
+    }
+  }
 }

@@ -1,0 +1,1 @@
+<template name="147a48a5"><view class="_view 147a48a5"><map class="_map 147a48a5 map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" controls="{{controls}}" show-location bindcontroltap="handleProxy" bindtap="handleProxy" data-eventid="{{'147a48a5-0'}}" data-comkey="{{$k}}"></map></view></template>
